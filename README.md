@@ -1,4 +1,4 @@
-# 🚀 MERN Chat Application - Deployment and DevOps
+#  MERN Chat Application - Deployment and DevOps
 
 A real-time chat application built with the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.io, featuring deployment configurations and CI/CD pipelines.
 
@@ -11,7 +11,7 @@ A real-time chat application built with the MERN stack (MongoDB, Express.js, Rea
 - **Typing Indicators**: See when others are typing
 - **Responsive Design**: Works on desktop and mobile
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 ### Backend
 - **Node.js** with Express.js 5.1.0
@@ -26,15 +26,15 @@ A real-time chat application built with the MERN stack (MongoDB, Express.js, Rea
 - **Axios** for HTTP requests
 - **Modern CSS** with responsive design
 
-## 🚀 Deployment
+##  Deployment
 
-### 📋 Prerequisites
+###  Prerequisites
 - Node.js 18+
 - MongoDB Atlas account
 - Deployment platform accounts (Render/Vercel/Heroku/Netlify)
 - GitHub account
 
-### 🔧 Setup Instructions
+###  Setup Instructions
 
 #### 1. Clone and Install Dependencies
 ```bash
@@ -72,7 +72,7 @@ cd client
 npm run dev
 ```
 
-### 🌐 Production Deployment
+###  Production Deployment
 
 #### Backend Deployment Options
 Choose one of the following platforms:
@@ -109,7 +109,7 @@ Choose one of the following platforms:
 ./deployment/scripts/deploy-frontend.sh github-pages
 ```
 
-## 🔄 CI/CD Pipeline
+##  CI/CD Pipeline
 
 ### GitHub Actions Workflows
 
@@ -149,7 +149,7 @@ HEROKU_APP_NAME=your-app-name
 HEROKU_EMAIL=your-email
 ```
 
-## 📊 Monitoring
+##  Monitoring
 
 ### Health Checks
 ```bash
@@ -160,17 +160,7 @@ node monitoring/health-check.js
 BACKEND_URL=https://your-backend.onrender.com FRONTEND_URL=https://your-frontend.vercel.app node monitoring/health-check.js
 ```
 
-### Monitoring Stack (Optional)
-```bash
-# Start monitoring stack locally
-cd monitoring
-docker-compose -f docker-compose.monitoring.yml up
-```
-
-- **Grafana**: http://localhost:3001 (admin/admin)
-- **Prometheus**: http://localhost:9090
-
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── server/                 # Express.js backend
@@ -189,13 +179,12 @@ docker-compose -f docker-compose.monitoring.yml up
 │   └── public/
 ├── .github/workflows/      # CI/CD pipelines
 ├── deployment/             # Deployment scripts
-├── monitoring/             # Monitoring configuration
 ├── server/.env.example     # Server environment template
 ├── client/.env.example     # Client environment template
 └── README.md
 ```
 
-## 🔧 Available Scripts
+##  Available Scripts
 
 ### Server
 ```bash
@@ -213,7 +202,7 @@ npm run lint       # Run ESLint
 npm test           # Run tests
 ```
 
-## 🌍 Environment Variables
+##  Environment Variables
 
 ### Server (.env)
 ```bash
@@ -230,7 +219,7 @@ VITE_API_URL=https://your-backend-domain.onrender.com
 VITE_SOCKET_URL=https://your-backend-domain.onrender.com
 ```
 
-## 📈 Performance Optimizations
+##  Performance Optimizations
 
 - **Code Splitting**: Automatic chunk splitting in Vite
 - **Caching**: Proper caching headers configured
@@ -238,7 +227,7 @@ VITE_SOCKET_URL=https://your-backend-domain.onrender.com
 - **Image Optimization**: Lazy loading and optimized assets
 - **Bundle Analysis**: Source maps enabled for debugging
 
-## 🔒 Security Features
+##  Security Features
 
 - **CORS**: Configured for production domains
 - **Security Headers**: XSS protection, content type options
@@ -246,7 +235,7 @@ VITE_SOCKET_URL=https://your-backend-domain.onrender.com
 - **Input Validation**: Request payload validation
 - **Rate Limiting**: API rate limiting (recommended)
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -265,7 +254,7 @@ VITE_SOCKET_URL=https://your-backend-domain.onrender.com
    - Verify connection string format
    - Ensure database user permissions
 
-## 📞 Support
+## Support
 
 For deployment issues:
 1. Check the GitHub Actions logs
@@ -275,14 +264,14 @@ For deployment issues:
 
 ---
 
-**🎯 Assignment Requirements Met:**
-- ✅ Production-ready MERN application
-- ✅ CI/CD pipelines with GitHub Actions
-- ✅ Multiple deployment platform options
-- ✅ Monitoring and health checks
-- ✅ Security configurations
-- ✅ Environment variable management
-- ✅ Documentation and deployment guides
+ ##  Assignment Requirements Met:
+-  Production-ready MERN application
+-  CI/CD pipelines with GitHub Actions
+-  Multiple deployment platform options
+-  Monitoring and health checks
+-  Security configurations
+-  Environment variable management
+-  Documentation and deployment guides
 
 ## Requirements
 

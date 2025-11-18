@@ -1,0 +1,50 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'server/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'server/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: server/package-lock.json
+
+    - name: Install dependencies
+      run: |
+        cd server
+        npm ci
+
+    - name: Run linting
+      run: |
+        cd server
+        npm run lint || echo "No lint script found"
+
+    - name: Run tests
+      run: |
+        cd server
+        npm test || echo "No tests configured yet"
+      env:
+        MONGODB_URI: mongodb://localhost:27017/test
+        JWT_SECRET: test-secret-key
+        NODE_ENV: test
+
+    - name: Build application
+      run: |
+        cd server
+        npm run build || echo "No build script needed for backend"

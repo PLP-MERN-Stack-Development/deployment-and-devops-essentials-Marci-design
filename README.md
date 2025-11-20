@@ -1,30 +1,4 @@
-#  MERN Chat Application - Deployment and DevOps
-
-A real-time chat application built with the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.io, featuring deployment configurations and CI/CD pipelines.
-
-## 📱 Application Features
-
-- **Real-time Messaging**: Instant chat with Socket.io
-- **User Authentication**: JWT-based login/registration
-- **Room Management**: Create and join chat rooms
-- **File Sharing**: Upload and share files
-- **Typing Indicators**: See when others are typing
-- **Responsive Design**: Works on desktop and mobile
-
-##  Tech Stack
-
-### Backend
-- **Node.js** with Express.js 5.1.0
-- **Socket.io** 4.8.1 for real-time communication
-- **MongoDB** with Mongoose 8.19.3
-- **JWT** for authentication
-- **Multer** for file uploads
-
-### Frontend
-- **React** 19.2.0 with Vite 7.2.2
-- **Socket.io-client** for real-time communication
-- **Axios** for HTTP requests
-- **Modern CSS** with responsive design
+#  Mth responsive design
 
 ##  Deployment
 
@@ -302,23 +276,30 @@ The assignment includes templates for setting up GitHub Actions workflows:
 - `backend-ci.yml`: Tests the Express.js backend
 - `frontend-cd.yml`: Deploys the frontend to your chosen platform
 - `backend-cd.yml`: Deploys the backend to your chosen platform
+ERN Chat Application - Deployment and DevOps
 
-## Submission
+A real-time chat application built with the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.io, featuring deployment configurations and CI/CD pipelines.
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+##  Application Features
 
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
+- **Real-time Messaging**: Instant chat with Socket.io
+- **User Authentication**: JWT-based login/registration
+- **Room Management**: Create and join chat rooms
+- **File Sharing**: Upload and share files
+- **Typing Indicators**: See when others are typing
+- **Responsive Design**: Works on desktop and mobile
 
-## Resources
+##  Tech Stack
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
-- [Render Documentation](https://render.com/docs)
-- [Railway Documentation](https://docs.railway.app/)
-- [Vercel Documentation](https://vercel.com/docs)
-- [Netlify Documentation](https://docs.netlify.com/) 
+### Backend
+- **Node.js** with Express.js 5.1.0
+- **Socket.io** 4.8.1 for real-time communication
+- **MongoDB** with Mongoose 8.19.3
+- **JWT** for authentication
+- **Multer** for file uploads
+
+### Frontend
+- **React** 19.2.0 with Vite 7.2.2
+- **Socket.io-client** for real-time communication
+- **Axios** for HTTP requests
+- **Modern CSS** w

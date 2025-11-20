@@ -1,4 +1,4 @@
-#  Mth responsive design
+##  Deployment of the Chat App
 
 ##  Deployment
 
@@ -123,17 +123,6 @@ HEROKU_APP_NAME=your-app-name
 HEROKU_EMAIL=your-email
 ```
 
-##  Monitoring
-
-### Health Checks
-```bash
-# Run health check script
-node monitoring/health-check.js
-
-# With environment variables
-BACKEND_URL=https://your-backend.onrender.com FRONTEND_URL=https://your-frontend.vercel.app node monitoring/health-check.js
-```
-
 ##  Project Structure
 
 ```
@@ -247,15 +236,6 @@ For deployment issues:
 -  Environment variable management
 -  Documentation and deployment guides
 
-## Requirements
-
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
 
 ## Deployment Platforms
 
@@ -285,7 +265,6 @@ A real-time chat application built with the MERN stack (MongoDB, Express.js, Rea
 - **Real-time Messaging**: Instant chat with Socket.io
 - **User Authentication**: JWT-based login/registration
 - **Room Management**: Create and join chat rooms
-- **File Sharing**: Upload and share files
 - **Typing Indicators**: See when others are typing
 - **Responsive Design**: Works on desktop and mobile
 
